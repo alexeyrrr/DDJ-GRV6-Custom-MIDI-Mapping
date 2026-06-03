@@ -37,7 +37,7 @@ This repository provides two distinct MIDI mapping configurations. **Immediately
 *   **Best for:** Most DJs who want standard, intuitive controls on each deck.
 
 ### 2. Lex's Deluxe MIDI Map (Advanced Channel-Swapped Stem Isolation)
-*   **Location:** `3 LEXS DELUXE MIDI MAPS/Lex's Deluxe GRV6 - Stable - No reloop, Stems for 1,2 on ch 3,4, CFX reloc.csv`
+*   **Location:** `3 LEXS DELUXE MIDI MAPS/Lex's Deluxe GRV6 - Stable - Stems for 1,2 on ch 3,4.csv`
 *   **Purpose:** Swaps the physical channels you use to control stem isolation knobs, allowing you to manipulate stems for Channel 1 & 2 using the physical controls of Channel 3 & 4.
     *   **Channel 1 Stems Control:** Enable stems isolation for Channel 1 by clicking **`SHIFT + CUE (Stem Iso)`** on **Channel 3**. You can then perform all stem adjustments on Channel 3 controls, while still keeping access to the regular Stems pad mode on Channel 1.
     *   **Channel 2 Stems Control:** Enable stems isolation for Channel 2 by clicking **`SHIFT + CUE (Stem Iso)`** on **Channel 4**. All adjustments are done using Channel 4 controls.
@@ -91,7 +91,7 @@ Rekordbox protects configuration files inside its system directory.
 4. Click **IMPORT** on the right side.
 5. Select your chosen custom map:
    *   **For Standard Custom Map (Recommended):** Import `DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv` from folder `2 CUSTOM MIDI MAP`.
-   *   **For Deluxe Custom Map:** Import `Lex's Deluxe GRV6 - Stable - No reloop, Stems for 1,2 on ch 3,4, CFX reloc.csv` from folder `3 LEXS DELUXE MIDI MAPS`.
+   *   **For Deluxe Custom Map:** Import `Lex's Deluxe GRV6 - Stable - Stems for 1,2 on ch 3,4.csv` from folder `3 LEXS DELUXE MIDI MAPS`.
 6. Restart Rekordbox to ensure settings initialize properly.
 
 ---
@@ -120,7 +120,7 @@ This repository contains the following files:
 | **`2 CUSTOM MIDI MAP/`** | Directory | **[Recommended]** Contains the main custom performance map. |
 | └─ `DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv` | User MIDI Map | Features dedicated pitch shift, auto loops, beat jumps, and stem controls. |
 | **`3 LEXS DELUXE MIDI MAPS/`** | Directory | Contains the deluxe channel-swapping stem isolation map. |
-| └─ `Lex's Deluxe GRV6 - Stable - No reloop, Stems for 1,2 on ch 3,4, CFX reloc.csv` | User MIDI Map | Stem control mapped to channels 3 and 4 for controlling channels 1 and 2. |
+| └─ `Lex's Deluxe GRV6 - Stable - Stems for 1,2 on ch 3,4.csv` | User MIDI Map | Stem control mapped to channels 3 and 4 for controlling channels 1 and 2. |
 | **`Stickers - New Groove Circuit Functionality/`** | Directory | Artwork vectors and PDFs for custom controller skins/stickers. |
 | **`Docs/`** | Directory | Reference manuals for the Pioneer DDJ-GRV6 (including the MIDI message list). |
 

@@ -84,15 +84,6 @@ MasterLevel,,KnobSlider,B608,,,,,,,,,,,Master Volume
 ##Booth Volume set to sample volume for MFX,,,,,,,,,,,,,,
 MFXSampleVolume,,KnobSlider,B609,,,,,,,,,,,booth volume knob
 ,,,,,,,,,,,,,,
-## Personal Choice: Turn off FX Selec btn & Change FX Select to Master Cue Shift,,,,,,,,,,,,,,
-NoFunction,NoFunction,Button,9608,,,,,9608,,,,,,VOID FX Select
-CFXSelect,CFXOn+Shift,Button,9662,,,,,,,,,,,Select CFX type - Set to Shift + Master Cue
-,,,,,,,,,,,,,,
-## Personal Choice: Disable reloop and turn that button into active loop button / exit,,,,,,,,,,,,,,
-NoFunction,NoFunction,Button,904D,0,1,2,3,,,,,,,VOID 
-AutoLoop,AutoLoop,Button,904D,0,1,2,3,,,,,,Fast,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
 "################    Stems for ch1,2 enabled on ch 3,4 when in stem iso mode & vice versa    #######################",,,,,,,,,,,,,,
 PartIsolatorVocal,EQHigh,KnobSliderHiRes,B008,2,3,0,1,,,,,,Fast,PART ISOLATOR VOCAL
 PartIsolatorInst,EQMid,KnobSliderHiRes,B00C,2,3,0,1,,,,,,Fast,PART ISOLATOR INST
