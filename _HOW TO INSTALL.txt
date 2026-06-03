@@ -17,6 +17,6 @@ Import the custom mapping CSV file:
 - For Standard Custom Map (Recommended):
   Import from folder "2 CUSTOM MIDI MAP"
 - For Deluxe Custom Map:
-  Import from folder "3 ALEXEYS DELUXE MIDI MAPS"
+  Import from folder "3 LEXS DELUXE MIDI MAPS"
 
 Restart Rekordbox after completing these steps.

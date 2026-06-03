@@ -15,8 +15,8 @@ This repository provides two distinct MIDI mapping configurations. **Immediately
 *   **Purpose:** A non-destructive enhancement of the default layout. Adds dedicated, instantly accessible controls for Beat Jump, Auto Loops, Stems isolation, Merge FX, and semitone pitch shifts without sacrificing core functions or requiring constant pad mode switching.
 *   **Best for:** Most DJs who want standard, intuitive controls on each deck.
 
-### 2. Alexey's Deluxe MIDI Map (Advanced Channel-Swapped Stem Isolation)
-*   **Location:** `3 ALEXEYS DELUXE MIDI MAPS/My Custom DDJ-GRV6 - No reloop, Stems for 1,2 on ch 3,4.csv`
+### 2. Lex's Deluxe MIDI Map (Advanced Channel-Swapped Stem Isolation)
+*   **Location:** `3 LEXS DELUXE MIDI MAPS/Lex's Deluxe GRV6 - Stable - No reloop, Stems for 1,2 on ch 3,4, CFX reloc.csv`
 *   **Purpose:** Swaps the physical channels you use to control stem isolation knobs, allowing you to manipulate stems for Channel 1 & 2 using the physical controls of Channel 3 & 4.
     *   **Channel 1 Stems Control:** Enable stems isolation for Channel 1 by clicking **`SHIFT + CUE (Stem Iso)`** on **Channel 3**. You can then perform all stem adjustments on Channel 3 controls, while still keeping access to the regular Stems pad mode on Channel 1.
     *   **Channel 2 Stems Control:** Enable stems isolation for Channel 2 by clicking **`SHIFT + CUE (Stem Iso)`** on **Channel 4**. All adjustments are done using Channel 4 controls.
@@ -32,12 +32,12 @@ Here is how the mappings rearrange the physical controls on the Pioneer DDJ-GRV6
 
 ### Standard Custom MIDI Map
 <!-- Placeholder for Standard Custom Map Decks Photo -->
-![Standard Map Layout Placeholder](docs/images/standard_layout_placeholder.png)
+![Standard Map Layout Placeholder](Docs/Images/standard_layout_placeholder.png)
 *(Image placeholder: Add a photo here showing the standard custom mapping controls layout)*
 
-### Alexey's Deluxe MIDI Map
+### Lex's Deluxe MIDI Map
 <!-- Placeholder for Deluxe Custom Map Decks Photo -->
-![Deluxe Map Layout Placeholder](docs/images/deluxe_layout_placeholder.png)
+![Deluxe Map Layout Placeholder](Docs/Images/deluxe_layout_placeholder.png)
 *(Image placeholder: Add a photo here showing the deluxe channel-swapping stem control mapping layout)*
 
 ---
@@ -52,8 +52,8 @@ This repository contains the following files:
 | └─ `DDJ-GRV6.midi.csv` | Configuration | Modified default controller configuration to remove read-only limits. **(Required base file replacement)** |
 | **`2 CUSTOM MIDI MAP/`** | Directory | **[Recommended]** Contains the main custom performance map. |
 | └─ `DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv` | User MIDI Map | Features dedicated pitch shift, auto loops, beat jumps, and stem controls. |
-| **`3 ALEXEYS DELUXE MIDI MAPS/`** | Directory | Contains the deluxe channel-swapping stem isolation map. |
-| └─ `My Custom DDJ-GRV6 - No reloop, Stems for 1,2 on ch 3,4.csv` | User MIDI Map | Stem control mapped to channels 3 and 4 for controlling channels 1 and 2. |
+| **`3 LEXS DELUXE MIDI MAPS/`** | Directory | Contains the deluxe channel-swapping stem isolation map. |
+| └─ `Lex's Deluxe GRV6 - Stable - No reloop, Stems for 1,2 on ch 3,4, CFX reloc.csv` | User MIDI Map | Stem control mapped to channels 3 and 4 for controlling channels 1 and 2. |
 | **`Stickers - New Groove Circuit Functionality/`** | Directory | Artwork vectors and PDFs for custom controller skins/stickers. |
 | **`Docs/`** | Directory | Reference manuals for the Pioneer DDJ-GRV6 (including the MIDI message list). |
 
@@ -125,7 +125,7 @@ Rekordbox protects configuration files inside its system directory.
 4. Click **IMPORT** on the right side.
 5. Select your chosen custom map:
    *   **For Standard Custom Map (Recommended):** Import `DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv` from folder `2 CUSTOM MIDI MAP`.
-   *   **For Deluxe Custom Map:** Import `My Custom DDJ-GRV6 - No reloop, Stems for 1,2 on ch 3,4.csv` from folder `3 ALEXEYS DELUXE MIDI MAPS`.
+   *   **For Deluxe Custom Map:** Import `Lex's Deluxe GRV6 - Stable - No reloop, Stems for 1,2 on ch 3,4, CFX reloc.csv` from folder `3 LEXS DELUXE MIDI MAPS`.
 6. Restart Rekordbox to ensure settings initialize properly.
 
 ---
