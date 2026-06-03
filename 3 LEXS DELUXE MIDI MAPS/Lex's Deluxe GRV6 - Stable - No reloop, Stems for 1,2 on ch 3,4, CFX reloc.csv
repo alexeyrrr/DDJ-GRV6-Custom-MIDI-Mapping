@@ -93,27 +93,8 @@ NoFunction,NoFunction,Button,904D,0,1,2,3,,,,,,,VOID
 AutoLoop,AutoLoop,Button,904D,0,1,2,3,,,,,,Fast,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
 "################    Stems for ch1,2 enabled on ch 3,4 when in stem iso mode & vice versa    #######################",,,,,,,,,,,,,,
 PartIsolatorVocal,EQHigh,KnobSliderHiRes,B008,2,3,0,1,,,,,,Fast,PART ISOLATOR VOCAL
 PartIsolatorInst,EQMid,KnobSliderHiRes,B00C,2,3,0,1,,,,,,Fast,PART ISOLATOR INST
 PartIsolatorDrums,EQLow,KnobSliderHiRes,B010,2,3,0,1,,,,,,Fast,PART ISOLATOR DRUMS
 PartIsolator,HeadphoneCue+Shift,Button,9039,2,3,0,1,9039,2,3,0,1,Fast,PART ISOLATOR On/Off
-,,,,,,,,,,,,,,
-# WIP - Get a second FX unit ,,,,,,,,,,,,,,
-####################################     FX2 Unit to Cross Fader    #########################################,,,,,,,,,,,,,,
-NoFunction,NoFunction,KnobSliderHiRes,B61F,,,,,,,,,,Fast,VOID PRIOR - crossfader
-FX1-2,FX1-2,KnobSliderHiRes,B61F,,,,,,,,,,Min=1;Max=72;,FX1-2 Effect Depth
-#FX1-2On,FX1-2On,Button,941E,,,,,941E,,,,,Fast;Priority=100,FX2-1 Effect On/Off
-#FX1-3On,FX1-3On,Button,941C,,,,,941C,,,,,Fast;Priority=100,FX2-1 Effect On/Off
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-NoFunction,NoFunction,Button,9650,,,,,,,,,,,Cross Fader Start (PLAY)
-NoFunction,NoFunction,Button,9651,,,,,,,,,,,Cross Fader Start (PLAY)
-NoFunction,NoFunction,Button,9652,,,,,,,,,,,Cross Fader Start (CUE)
-NoFunction,NoFunction,Button,9653,,,,,,,,,,,Cross Fader Start (CUE)
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-FX1-2On,FX1-2On,Button,9652,,,,,,,,,,Fast;Priority=100,FX2-1 Effect On/Off
-FX1-3On,FX1-3On,Button,9651,,,,,,,,,,Fast;Priority=100,FX3-1 Effect On/Off
