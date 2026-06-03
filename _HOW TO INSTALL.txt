@@ -1,15 +1,22 @@
-This is a 2 step process becayse you need to change the default Midi file that Rekordbox looks at for the controller to allow for MIDI assigment. 
-Basically you first upload a default midi file to remove the "RO" (Read Only) requirement. 
-Note: it may still show errors on assignment, but they will update.
+This is a 2-step process because you need to change the default MIDI file that Rekordbox looks at for the controller to unlock custom MIDI assignments.
+Basically, you first overwrite a default MIDI file in your Rekordbox system folder to remove the "Read-Only" restriction.
+
+Note: Rekordbox may still show warning/error messages upon assignment, but the updates will apply successfully.
 
 S T E P 1:
-Copy file: From folder "1 DEFAULT MIDI FILE TO COPY TO Key Mappings" the file named "DDJ-GRV6.midi.csv" to C:\Program Files\rekordbox\rekordbox 7.2.14\MidiMappings
-
+Copy the "DDJ-GRV6.midi.csv" file:
+- FROM folder: "1 DEFAULT MIDI MAP TO COPY TO REKORDBOX SYSTEM"
+- TO your Rekordbox directory's MidiMappings folder, typically:
+  C:\Program Files\Pioneer\rekordbox 7.x.x\MidiMappings\
+  or
+  C:\Program Files\rekordbox\rekordbox 7.x.x\MidiMappings\
 
 S T E P 2:
-Open Rekordbox, go to Midi config at the top right of the screen.
-Import the csv file from folder "2 MY CUSTOM KEY MAPS"
+Open Rekordbox, click the "MIDI" button in the top right of the screen.
+Import the custom mapping CSV file:
+- For Standard Custom Map (Recommended):
+  Import from folder "2 CUSTOM MIDI MAP"
+- For Deluxe Custom Map:
+  Import from folder "3 ALEXEYS DELUXE MIDI MAPS"
 
-
-
-
+Restart Rekordbox after completing these steps.

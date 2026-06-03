@@ -1,114 +1,157 @@
 # DDJ-GRV6 Custom MIDI Mapping for Rekordbox 7
 
-**A performance-oriented custom MIDI mapping for the Pioneer DDJ-GRV6 in Rekordbox 7**, designed to improve live workflow by reducing pad mode switching.
+**A performance-oriented custom MIDI mapping suite for the Pioneer DDJ-GRV6 in Rekordbox 7**, designed to streamline live workflows by reducing pad mode switching and expanding control accessibility.
 
-### Overview & Philosophy
+---
 
-A common point of friction in the stock DDJ-GRV6 mapping is that Hot Cue, Beat Jump, Beat Loop, Sampler, and other performance modes all compete for the same 8 pads. This often forces you to switch modes during a set.
+## 🎛️ Choose Your Mapping
 
-**This custom mapping improves that experience** by adding dedicated controls for frequently used functions.
+This repository provides two distinct MIDI mapping configurations. **Immediately determine which one fits your workflow:**
 
-**Core Objective:**
-- Provide direct access to Beat Jump and common Beat Loops without needing to change pad modes.
-- Let you stay in Hot Cue mode on the pads for most of your set, while still having instant access to jumps and loops.
+### 1. Standard Custom MIDI Map (Recommended & Default)
+*   **Location:** `2 CUSTOM MIDI MAP/DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv`
+*   **Purpose:** A non-destructive enhancement of the default layout. Adds dedicated, instantly accessible controls for Beat Jump, Auto Loops, Stems isolation, Merge FX, and semitone pitch shifts without sacrificing core functions or requiring constant pad mode switching.
+*   **Best for:** Most DJs who want standard, intuitive controls on each deck.
 
-**Result:** Faster, more fluid performance — for example, jumping to a cue point and immediately firing a 16-bar loop without multiple mode changes.
+### 2. Alexey's Deluxe MIDI Map (Advanced Channel-Swapped Stem Isolation)
+*   **Location:** `3 ALEXEYS DELUXE MIDI MAPS/My Custom DDJ-GRV6 - No reloop, Stems for 1,2 on ch 3,4.csv`
+*   **Purpose:** Swaps the physical channels you use to control stem isolation knobs, allowing you to manipulate stems for Channel 1 & 2 using the physical controls of Channel 3 & 4.
+    *   **Channel 1 Stems Control:** Enable stems isolation for Channel 1 by clicking **`SHIFT + CUE (Stem Iso)`** on **Channel 3**. You can then perform all stem adjustments on Channel 3 controls, while still keeping access to the regular Stems pad mode on Channel 1.
+    *   **Channel 2 Stems Control:** Enable stems isolation for Channel 2 by clicking **`SHIFT + CUE (Stem Iso)`** on **Channel 4**. All adjustments are done using Channel 4 controls.
+    *   **Normal Channel 3/4 Functionality:** Channel 3 & 4 EQs and controls still function normally. The only limitation is that if Stems Isolation mode is actively enabled for a side channel, you temporarily won't be able to use the regular EQs for Channel 3/4. Once you disable Stems Isolation mode, full regular EQ functionality returns immediately.
+    *   **Reversible / Symmetrical Control:** You can also reverse this functionality so that the stem isolation buttons for Channel 1 & 2 enable stem isolation mode for Channel 3 & 4, making the entire setup function symmetrically.
+*   **Best for:** DJs looking to offload stem adjustments from the active playing deck (Channel 1 & 2) onto the side channels (Channel 3 & 4) to keep physical hands-on control cleaner on the main decks.
 
-### Button Changes & Trade-offs
+---
+
+## 📸 Hardware Layout & Decks Visuals
+
+Here is how the mappings rearrange the physical controls on the Pioneer DDJ-GRV6 decks:
+
+### Standard Custom MIDI Map
+<!-- Placeholder for Standard Custom Map Decks Photo -->
+![Standard Map Layout Placeholder](docs/images/standard_layout_placeholder.png)
+*(Image placeholder: Add a photo here showing the standard custom mapping controls layout)*
+
+### Alexey's Deluxe MIDI Map
+<!-- Placeholder for Deluxe Custom Map Decks Photo -->
+![Deluxe Map Layout Placeholder](docs/images/deluxe_layout_placeholder.png)
+*(Image placeholder: Add a photo here showing the deluxe channel-swapping stem control mapping layout)*
+
+---
+
+## 📂 Repository Structure & Files
+
+This repository contains the following files:
+
+| Folder / File | Type | Description |
+| :--- | :--- | :--- |
+| **`1 DEFAULT MIDI MAP TO COPY TO REKORDBOX SYSTEM/`** | Directory | Contains default controller database mapping. |
+| └─ `DDJ-GRV6.midi.csv` | Configuration | Modified default controller configuration to remove read-only limits. **(Required base file replacement)** |
+| **`2 CUSTOM MIDI MAP/`** | Directory | **[Recommended]** Contains the main custom performance map. |
+| └─ `DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv` | User MIDI Map | Features dedicated pitch shift, auto loops, beat jumps, and stem controls. |
+| **`3 ALEXEYS DELUXE MIDI MAPS/`** | Directory | Contains the deluxe channel-swapping stem isolation map. |
+| └─ `My Custom DDJ-GRV6 - No reloop, Stems for 1,2 on ch 3,4.csv` | User MIDI Map | Stem control mapped to channels 3 and 4 for controlling channels 1 and 2. |
+| **`Stickers - New Groove Circuit Functionality/`** | Directory | Artwork vectors and PDFs for custom controller skins/stickers. |
+| **`Docs/`** | Directory | Reference manuals for the Pioneer DDJ-GRV6 (including the MIDI message list). |
+
+---
+
+## ⚙️ Button Changes & Trade-offs (Standard Mapping)
 
 **Major Reassignments:**
 
-- **Two buttons originally used for Drum Release FX Select**:
-  - Now → **Semitone Up** and **Semitone Down** (works across all decks)
-  - Lost → Original Drum Release FX type selection
-
-- **Dedicated Beat Jump controls** (repurposed PAD5–PAD8 area):
-  - Now function independently of current pad mode (REV3, FWD3, REV4, FWD4)
-
-- **New dedicated Beat Loop buttons**:
-  - Direct triggers for **2-beat**, **4-beat**, **16-beat**, and **32-beat** loops
-
-- **Active Part / Stem Isolator buttons**:
-  - Direct access for **Vocal**, **Instruments**, **Bass**, and **Drums**
-
-- **Drum Release FX**:
-  - Moved to alternative MIDI codes to free up the original buttons for pitch shifting.
+*   **Quick Track Pitch Control**:
+    *   Switch in Groove Circuit is now → **Semitone Up** and **Semitone Down**
+*   **Dedicated Beat Jump controls** :
+    *   Now function independently of current pad mode (REV3, FWD3, REV4, FWD4)
+    *   Note: Please check that the beat jump section of your pads is set to the correct page to show the +/- 16 beat and 32 beat values
+*   **New dedicated Beat Loop buttons**:
+    *   Direct buttons for **2-beat**, **4-beat**, **16-beat**, and **32-beat** loops
+*   **Active Part / Stem Isolator buttons**:
+    *   Direct buttons for muting **Vocal**, **Instruments**, **Bass**, and **Drums**
 
 **Additional Features:**
-- Grid Slide button for quick beatgrid adjustments
-- Headphone Mix / Volume and Master Level controls
-- MFX1 / MFX2 section (volume, on/off, select, assign)
+*   Grid Slide button for quick beatgrid adjustments as shift functionality on the deck select buttons 
+*   Headphone Mix / Volume and Master Level controls for compatibilty with soundcards (instead of GRV6 internal output)
+*   MFX1 / MFX2 section (volume, on/off, select, assign)
 
-**What you lose:**
-- Some advanced Drum Swap and Drum Release FX workflows (deprioritized in favor of faster performance tools).
 
-### Files Included
+---
 
-| File | Type | Purpose |
-|------|------|--------|
-| `DDJ-GRV6.midi.csv` | Modified Default Mapping | Required base file replacement |
-| `My Custom DDJ-GRV6 with pitch shift.csv` | Custom User Mapping | Main mapping to import |
+## 📥 Installation
 
-### Installation
+> [!IMPORTANT]
+> This is a two-step process because Rekordbox restricts MIDI reassignment for factory controllers by default. You must replace a system default MIDI file first to unlock custom maps.
 
-#### Step 1: Replace the Default Mapping File (Required)
+### Step 1: Replace the Default Mapping File (Required)
 
-Rekordbox protects files inside the app bundle. On macOS you will likely need to grant **Full Disk Access** first.
+Rekordbox protects configuration files inside its system directory.
 
-**macOS Instructions:**
+#### macOS Instructions:
+1. Go to **System Settings → Privacy & Security → Full Disk Access**.
+2. Click **+** and add your terminal app (e.g., `Terminal` or `iTerm`).
+3. Restart your Terminal window.
+4. Run the following commands to backup and replace the default MIDI mapping file:
 
-1. Go to **System Settings → Privacy & Security → Full Disk Access**
-2. Click the lock at the bottom and authenticate
-3. Click **+** and add your terminal app:
-   - `Terminal` (located in `/Applications/Utilities/`) or
-   - `iTerm` (if you use iTerm — recommended)
-4. Restart your Terminal/iTerm window
+   ```bash
+   cd "/Applications/rekordbox 7/rekordbox.app/Contents/Resources/MidiMappings"
+   
+   # Backup original
+   sudo cp DDJ-GRV6.midi.csv DDJ-GRV6.midi.csv.bak
+   
+   # Copy the custom default mapping from your cloned repo
+   sudo cp ~/path/to/1\ DEFAULT\ MIDI\ MAP\ TO\ COPY\ TO\ REKORDBOX\ SYSTEM/DDJ-GRV6.midi.csv .
+   ```
+   *(Note: Replace `~/path/to/...` with the actual path to your cloned repository)*
 
-5. Run the following commands:
+#### Windows Instructions:
+1. Navigate to your Rekordbox install directory's MidiMappings folder, typically:
+   *   `C:\Program Files\Pioneer\rekordbox 7.x.x\MidiMappings\` or
+   *   `C:\Program Files\rekordbox\rekordbox 7.x.x\MidiMappings\`
+2. Find `DDJ-GRV6.midi.csv`.
+3. Right-click on it → **Properties** → Uncheck **Read-only** → Click **Apply**.
+4. Copy `DDJ-GRV6.midi.csv` from folder `1 DEFAULT MIDI MAP TO COPY TO REKORDBOX SYSTEM` in this repo and overwrite the one in the Rekordbox directory.
 
-```bash
-cd "/Applications/rekordbox 7/rekordbox.app/Contents/Resources/MidiMappings"
+---
 
-# Backup original
-sudo cp DDJ-GRV6.midi.csv DDJ-GRV6.midi.csv.bak
+### Step 2: Import the Custom Mapping into Rekordbox
 
-# Copy the custom default mapping
-sudo cp ~/path/to/1\ DEFAULT\ MIDI\ FILE\ TO\ COPY\ TO\ Key\ Mappings/DDJ-GRV6.midi.csv .
-```
+1. Connect your Pioneer DDJ-GRV6 controller and open Rekordbox.
+2. Click the **MIDI** button in the top right.
+3. In the MIDI settings window, make sure the **DDJ-GRV6** tab is selected.
+4. Click **IMPORT** on the right side.
+5. Select your chosen custom map:
+   *   **For Standard Custom Map (Recommended):** Import `DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv` from folder `2 CUSTOM MIDI MAP`.
+   *   **For Deluxe Custom Map:** Import `My Custom DDJ-GRV6 - No reloop, Stems for 1,2 on ch 3,4.csv` from folder `3 ALEXEYS DELUXE MIDI MAPS`.
+6. Restart Rekordbox to ensure settings initialize properly.
 
-> **Tip:** Replace `~/path/to/...` with the actual location of the file.
+---
 
-**Windows Instructions:**
+## 🎛️ How to Use
 
-1. Go to: `C:\Program Files\Pioneer\rekordbox 7.x.x\MidiMappings\`
-2. Find `DDJ-GRV6.midi.csv`
-3. Right-click → **Properties** → Uncheck **Read-only** → Apply
-4. Copy the version from this repo into the folder (overwrite)
+*   **Hot Cues**: You can leave your pads in Hot Cue mode for most of your set and perform easily without switching modes.
+*   **Beat Jump**: Dedicated controls mapped to physical areas on the controller.
+*   **Beat Loops**: Direct 2 / 4 / 16 / 32 beat loop buttons.
+*   **Semitone Pitch Shift**: Use the two repurposed Drum Release FX Select buttons to pitch up/down.
+*   **Active Parts (Stem Isolation)**: One-press toggle access to Vocal, Instrument, Bass, and Drums.
+*   **Deluxe Stem Swap (Deluxe Mapping Only)**:
+    *   **Channel 1 stems** are controlled via **Channel 3**: Activate stems control for Ch 1 by clicking **`SHIFT + CUE (Stem Iso)`** on Channel 3. Perform all adjustments using Channel 3 controls while retaining standard stems pad mode.
+    *   **Channel 2 stems** are controlled via **Channel 4**: Activate stems control for Ch 2 by clicking **`SHIFT + CUE (Stem Iso)`** on Channel 4. Perform all adjustments using Channel 4 controls.
+    *   *Note on Channel EQs:* EQs and controls on Channel 3 & 4 continue to work normally. However, if stem isolation is active on those side channels, the EQs control stems instead of normal EQ bands. Deactivate stem isolation to restore standard EQ functions. You can also reverse this setup so the buttons on Channels 1 & 2 activate stem isolation for Channels 3 & 4 symmetrically.
 
-#### Step 2: Import the Custom Mapping
+---
 
-1. Open Rekordbox and connect your DDJ-GRV6
-2. Go to **MIDI** tab → Select **DDJ-GRV6**
-3. Click **IMPORT**
-4. Select `My Custom DDJ-GRV6 with pitch shift.csv`
-5. Restart Rekordbox
+## 🔍 Troubleshooting & Resetting
 
-### How to Use
+*   **Assignment Warnings**: If you see warnings on first import, simply restart Rekordbox.
+*   **No MIDI Response**: Click the **DEFAULT** button inside Rekordbox's MIDI settings, then re-import the custom CSV file.
+*   **Restore Original Settings**: Delete the modified `DDJ-GRV6.midi.csv` file from your Rekordbox system folder and restore your backup, or click **DEFAULT** in Rekordbox MIDI config and reinstall/re-initialize Rekordbox settings.
 
-- **Hot Cues**: You can comfortably leave your pads in Hot Cue mode for most of your set.
-- **Beat Jump**: Use the dedicated Beat Jump buttons.
-- **Beat Loops**: Use the new direct 2/4/16/32 beat loop buttons.
-- **Semitone Pitch Shift**: Use the two repurposed Drum Release FX Select buttons.
-- **Active Parts**: One-press access to Vocal / Inst / Bass / Drums isolators.
+---
 
-### Troubleshooting
+## 💻 Compatibility
 
-- Assignment warnings on first import are normal — restart Rekordbox.
-- If mappings don’t respond, click **DEFAULT** then re-import the custom file.
-- To restore original behavior: Use the **DEFAULT** button in MIDI settings or delete the `MidiMappings` folder and relaunch Rekordbox.
-
-### Compatibility
-
-- Controller: Pioneer DDJ-GRV6
-- Software: Rekordbox 7.2.14+ (tested on 7.2.14)
-- OS: Windows & macOS
+*   **Controller:** Pioneer DDJ-GRV6
+*   **Software:** Rekordbox 7.2.14+ (tested on version 7.2.14)
+*   **Operating Systems:** Windows & macOS
