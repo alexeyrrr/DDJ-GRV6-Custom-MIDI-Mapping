@@ -6,60 +6,7 @@
 
 ---
 
-## 🎛️ Choose Your Mapping
-
-This repository provides two distinct MIDI mapping configurations. **Immediately determine which one fits your workflow:**
-
-### 1. Standard Custom MIDI Map (Recommended & Default)
-*   **Location:** `2 CUSTOM MIDI MAP/DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv`
-*   **Purpose:** A non-destructive enhancement of the default layout. Adds dedicated, instantly accessible controls for Beat Jump, Auto Loops, Stems isolation, Merge FX, and semitone pitch shifts without sacrificing core functions or requiring constant pad mode switching.
-*   **Best for:** Most DJs who want standard, intuitive controls on each deck.
-
-### 2. Lex's Deluxe MIDI Map (Advanced Channel-Swapped Stem Isolation)
-*   **Location:** `3 LEXS DELUXE MIDI MAPS/Lex's Deluxe GRV6 - Stable - No reloop, Stems for 1,2 on ch 3,4, CFX reloc.csv`
-*   **Purpose:** Swaps the physical channels you use to control stem isolation knobs, allowing you to manipulate stems for Channel 1 & 2 using the physical controls of Channel 3 & 4.
-    *   **Channel 1 Stems Control:** Enable stems isolation for Channel 1 by clicking **`SHIFT + CUE (Stem Iso)`** on **Channel 3**. You can then perform all stem adjustments on Channel 3 controls, while still keeping access to the regular Stems pad mode on Channel 1.
-    *   **Channel 2 Stems Control:** Enable stems isolation for Channel 2 by clicking **`SHIFT + CUE (Stem Iso)`** on **Channel 4**. All adjustments are done using Channel 4 controls.
-    *   **Normal Channel 3/4 Functionality:** Channel 3 & 4 EQs and controls still function normally. The only limitation is that if Stems Isolation mode is actively enabled for a side channel, you temporarily won't be able to use the regular EQs for Channel 3/4. Once you disable Stems Isolation mode, full regular EQ functionality returns immediately.
-    *   **Reversible / Symmetrical Control:** You can also reverse this functionality so that the stem isolation buttons for Channel 1 & 2 enable stem isolation mode for Channel 3 & 4, making the entire setup function symmetrically.
-*   **Best for:** DJs looking to offload stem adjustments from the active playing deck (Channel 1 & 2) onto the side channels (Channel 3 & 4) to keep physical hands-on control cleaner on the main decks.
-
----
-
-## 📸 Hardware Layout & Decks Visuals
-
-Here is how the mappings rearrange the physical controls on the Pioneer DDJ-GRV6 decks:
-
-### Standard Custom MIDI Map
-<!-- Placeholder for Standard Custom Map Decks Photo -->
-![Standard Map Layout Placeholder](Docs/Images/standard_layout_placeholder.png)
-*(Image placeholder: Add a photo here showing the standard custom mapping controls layout)*
-
-### Lex's Deluxe MIDI Map
-<!-- Placeholder for Deluxe Custom Map Decks Photo -->
-![Deluxe Map Layout Placeholder](Docs/Images/deluxe_layout_placeholder.png)
-*(Image placeholder: Add a photo here showing the deluxe channel-swapping stem control mapping layout)*
-
----
-
-## 📂 Repository Structure & Files
-
-This repository contains the following files:
-
-| Folder / File | Type | Description |
-| :--- | :--- | :--- |
-| **`1 DEFAULT MIDI MAP TO COPY TO REKORDBOX SYSTEM/`** | Directory | Contains default controller database mapping. |
-| └─ `DDJ-GRV6.midi.csv` | Configuration | Modified default controller configuration to remove read-only limits. **(Required base file replacement)** |
-| **`2 CUSTOM MIDI MAP/`** | Directory | **[Recommended]** Contains the main custom performance map. |
-| └─ `DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv` | User MIDI Map | Features dedicated pitch shift, auto loops, beat jumps, and stem controls. |
-| **`3 LEXS DELUXE MIDI MAPS/`** | Directory | Contains the deluxe channel-swapping stem isolation map. |
-| └─ `Lex's Deluxe GRV6 - Stable - No reloop, Stems for 1,2 on ch 3,4, CFX reloc.csv` | User MIDI Map | Stem control mapped to channels 3 and 4 for controlling channels 1 and 2. |
-| **`Stickers - New Groove Circuit Functionality/`** | Directory | Artwork vectors and PDFs for custom controller skins/stickers. |
-| **`Docs/`** | Directory | Reference manuals for the Pioneer DDJ-GRV6 (including the MIDI message list). |
-
----
-
-## ⚙️ Button Changes & Trade-offs (Standard Mapping)
+## ⚙️ Button Changes (Standard Mapping)
 
 **Major Reassignments:**
 
@@ -78,6 +25,25 @@ This repository contains the following files:
 *   Headphone Mix / Volume and Master Level controls for compatibilty with soundcards (instead of GRV6 internal output)
 *   MFX1 / MFX2 section (volume, on/off, select, assign)
 
+---
+
+## 🎛️ Choose Your Mapping
+
+This repository provides two distinct MIDI mapping configurations. **Immediately determine which one fits your workflow:**
+
+### 1. Standard Custom MIDI Map (Recommended & Default)
+*   **Location:** `2 CUSTOM MIDI MAP/DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv`
+*   **Purpose:** A non-destructive enhancement of the default layout. Adds dedicated, instantly accessible controls for Beat Jump, Auto Loops, Stems Mute/UnMute, Merge FX, and semitone pitch shifts without sacrificing core functions or requiring constant pad mode switching.
+*   **Best for:** Most DJs who want standard, intuitive controls on each deck.
+
+### 2. Lex's Deluxe MIDI Map (Advanced Channel-Swapped Stem Isolation)
+*   **Location:** `3 LEXS DELUXE MIDI MAPS/Lex's Deluxe GRV6 - Stable - No reloop, Stems for 1,2 on ch 3,4, CFX reloc.csv`
+*   **Purpose:** Swaps the physical channels you use to control stem isolation knobs, allowing you to manipulate stems for Channel 1 & 2 using the physical controls of Channel 3 & 4.
+    *   **Channel 1 Stems Control:** Enable stems isolation for Channel 1 by clicking **`SHIFT + CUE (Stem Iso)`** on **Channel 3**. You can then perform all stem adjustments on Channel 3 controls, while still keeping access to the regular Stems pad mode on Channel 1.
+    *   **Channel 2 Stems Control:** Enable stems isolation for Channel 2 by clicking **`SHIFT + CUE (Stem Iso)`** on **Channel 4**. All adjustments are done using Channel 4 controls.
+    *   **Normal Channel 3/4 Functionality:** Channel 3 & 4 EQs and controls still function normally. The only limitation is that if Stems Isolation mode is actively enabled for a side channel, you temporarily won't be able to use the regular EQs for Channel 3/4. Once you disable Stems Isolation mode, full regular EQ functionality returns immediately.
+    *   **Reversible / Symmetrical Control:** You can also reverse this functionality so that the stem isolation buttons for Channel 1 & 2 enable stem isolation mode for Channel 3 & 4, making the entire setup function symmetrically.
+*   **Best for:** DJs looking to offload stem adjustments from the active playing deck (Channel 1 & 2) onto the side channels (Channel 3 & 4) to keep physical hands-on control cleaner on the main decks.
 
 ---
 
@@ -142,18 +108,20 @@ Rekordbox protects configuration files inside its system directory.
     *   **Channel 2 stems** are controlled via **Channel 4**: Activate stems control for Ch 2 by clicking **`SHIFT + CUE (Stem Iso)`** on Channel 4. Perform all adjustments using Channel 4 controls.
     *   *Note on Channel EQs:* EQs and controls on Channel 3 & 4 continue to work normally. However, if stem isolation is active on those side channels, the EQs control stems instead of normal EQ bands. Deactivate stem isolation to restore standard EQ functions. You can also reverse this setup so the buttons on Channels 1 & 2 activate stem isolation for Channels 3 & 4 symmetrically.
 
+
+## 📂 Repository Structure & Files
+
+This repository contains the following files:
+
+| Folder / File | Type | Description |
+| :--- | :--- | :--- |
+| **`1 DEFAULT MIDI MAP TO COPY TO REKORDBOX SYSTEM/`** | Directory | Contains default controller database mapping. |
+| └─ `DDJ-GRV6.midi.csv` | Configuration | Modified default controller configuration to remove read-only limits. **(Required base file replacement)** |
+| **`2 CUSTOM MIDI MAP/`** | Directory | **[Recommended]** Contains the main custom performance map. |
+| └─ `DDJ-GRV6 Mapping - Beat Jump, Auto Loop, Stems, Merge FX & Pitch (Non-Destructive).csv` | User MIDI Map | Features dedicated pitch shift, auto loops, beat jumps, and stem controls. |
+| **`3 LEXS DELUXE MIDI MAPS/`** | Directory | Contains the deluxe channel-swapping stem isolation map. |
+| └─ `Lex's Deluxe GRV6 - Stable - No reloop, Stems for 1,2 on ch 3,4, CFX reloc.csv` | User MIDI Map | Stem control mapped to channels 3 and 4 for controlling channels 1 and 2. |
+| **`Stickers - New Groove Circuit Functionality/`** | Directory | Artwork vectors and PDFs for custom controller skins/stickers. |
+| **`Docs/`** | Directory | Reference manuals for the Pioneer DDJ-GRV6 (including the MIDI message list). |
+
 ---
-
-## 🔍 Troubleshooting & Resetting
-
-*   **Assignment Warnings**: If you see warnings on first import, simply restart Rekordbox.
-*   **No MIDI Response**: Click the **DEFAULT** button inside Rekordbox's MIDI settings, then re-import the custom CSV file.
-*   **Restore Original Settings**: Delete the modified `DDJ-GRV6.midi.csv` file from your Rekordbox system folder and restore your backup, or click **DEFAULT** in Rekordbox MIDI config and reinstall/re-initialize Rekordbox settings.
-
----
-
-## 💻 Compatibility
-
-*   **Controller:** Pioneer DDJ-GRV6
-*   **Software:** Rekordbox 7.2.14+ (tested on version 7.2.14)
-*   **Operating Systems:** Windows & macOS
