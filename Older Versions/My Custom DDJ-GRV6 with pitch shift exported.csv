@@ -1,0 +1,47 @@
+@file,1,DDJ-GRV6,,,,,,,,,,,,
+ActivePartBass,,Button,,9032,9132,9232,,,9032,9132,9232,,Fast;,
+ActivePartDrums,,Button,,9033,9133,9233,9333,,9033,9133,9233,9333,Fast;,
+ActivePartInst,,Button,,9031,9131,9231,9331,,9031,9131,9231,9331,Fast;,
+ActivePartVocal,,Button,,9030,9130,9230,9330,,9030,9130,9230,9330,Fast;,
+BeatLoop16,,Button,,9006,9106,9206,9306,,9006,9106,9206,9306,Fast;,
+BeatLoop2,,Button,,9004,9104,9204,9304,,9004,9104,9204,9304,Fast;,
+BeatLoop32,,Button,,9007,9107,9207,9307,,9007,9107,9207,9307,Fast;,
+BeatLoop4,,Button,,9005,9105,9205,9305,,9005,9105,9205,9305,Fast;,
+DrumRelease+Shift,DrumRelease+Shift,Button,,9BB1,9BA1,9BC1,9BBC,,9BB1,9BA1,9BC1,9BBC,Fast;,No function
+DrumReleaseFx,DrumRelease,Button,,9BB2,9BB3,9BB4,9BD1,,9BB2,9BB3,9BB4,9BD1,Fast;,Drum Release On/Off
+DrumReleaseFxSelect,DrumRelease+Shift,Button,,9BB8,9BB9,9BBA,9BBD,,9BB8,9BB9,9BBA,9BBD,Fast;,Select Release FX type for Drum Release
+FxPanel,,Button,902B,,,,,902B,,,,,,
+FxPanel,,Button,912B,,,,,912B,,,,,,
+HeadphonesMix,,KnobSlider,B60C,,,,,,,,,,Fast;,Headphone Mix
+HeadphonesVolume,,KnobSlider,B60D,,,,,,,,,,Fast;,headphone Volume
+MFX1,,KnobSlider,B012,,,,,,,,,,,
+MFX1Assign1,,Button,902C,,,,,902C,,,,,,
+MFX1Assign3,,Button,902D,,,,,902D,,,,,,
+MFX1On,,Button,9008,,,,,9008,,,,,,
+MFX1SelectDown,,Button,902E,,,,,902E,,,,,,
+MFX1SelectUp,,Button,902F,,,,,902F,,,,,,
+MFX2,,KnobSlider,B112,,,,,,,,,,,
+MFX2Assign2,,Button,912C,,,,,912C,,,,,,
+MFX2Assign4,,Button,912D,,,,,912D,,,,,,
+MFX2On,,Button,9108,,,,,9108,,,,,,
+MFX2SelectDown,,Button,912E,,,,,912E,,,,,,
+MFX2SelectUp,,Button,912F,,,,,912F,,,,,,
+MFXSampleVolume,,KnobSlider,B609,,,,,,,,,,,
+MasterCue,MasterCue,Button,9663,,,,,9663,,,,,Fast;,Master CUE (All Headphone CUE valid/invalid)
+MasterLevel,,KnobSlider,B608,,,,,,,,,,Fast;,Master Volume
+NoFunction,,Button,,,,9208,9308,,9024,9124,9208,932D,,Select Release FX type for Drum Release
+NoFunction,,Button,,,,922B,932B,,,,922B,9308,,
+NoFunction,,Button,,,,922C,932C,,,,922C,9332,,Call Bank A for Drum Swap
+NoFunction,,Button,,,,922D,932D,,,,922D,932C,,Call Bank B for Drum Swap
+NoFunction,,Button,,,,922E,932F,,,,922E,932F,,Single mode On
+NoFunction,,Button,,,,922F,9332,,,,922F,932B,,Multi mode On
+NoFunction,,KnobSliderHiRes,,,,B212,B304,,,,,,,GAIN for DRUM SWAP
+NoFunction,,KnobSliderHiRes,,,,,B307,,,,,,,EQ High
+NoFunction,,KnobSliderHiRes,,,,,B312,,,,,,,GAIN for DRUM SWAP
+NoFunction,NoFunction,Button,,,,,,,,,9224,9324,,
+PAD5_BeatJump,,DdjSxPad,,9000,9100,9200,9300,,9000,9100,9200,9300,Fast;,
+PAD6_BeatJump,,DdjSxPad,,9001,9101,9201,9301,,9001,9101,9201,9301,Fast;,
+PAD7_BeatJump,,DdjSxPad,,9002,9102,9202,9302,,9002,9102,9202,9302,Fast;,
+PAD8_BeatJump,,DdjSxPad,,9003,9103,9203,9303,,9003,9103,9203,9303,Fast;,
+SemitoneDown,,Button,9027,0,1,2,3,9027,0,1,2,3,Fast;,
+SemitoneUp,,Button,9026,0,1,2,3,9026,0,1,2,3,Fast;,
