@@ -1,5 +1,7 @@
 # DDJ-GRV6 Custom MIDI Mapping for Rekordbox 7
 
+![Groove Circuit Replacement](Docs/Images/Groove%20Circuit%20Replacement.JPG)
+
 **A performance-oriented custom MIDI mapping suite for the Pioneer DDJ-GRV6 in Rekordbox 7**, designed to streamline live workflows by reducing pad mode switching and expanding control accessibility.
 
 ---
