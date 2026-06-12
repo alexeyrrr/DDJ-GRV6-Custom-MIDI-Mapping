@@ -93,21 +93,28 @@ PartIsolator,HeadphoneCue+Shift,Button,9039,2,3,0,1,9039,2,3,0,1,Fast,PART ISOLA
 ####################################     FX2 Unit to Cross Fader    #########################################,,,,,,,,,,,,,,
 NoFunction,NoFunction,KnobSliderHiRes,B61F,,,,,,,,,,Fast,VOID PRIOR - crossfader
 FX1-2,FX1-2,KnobSliderHiRes,B61F,,,,,,,,,,Min=1;Max=72;,FX1-2 Effect Depth
-#FX1-2On,FX1-2On,Button,941E,,,,,941E,,,,,Fast;Priority=100,FX2-1 Effect On/Off
-#FX1-3On,FX1-3On,Button,941C,,,,,941C,,,,,Fast;Priority=100,FX2-1 Effect On/Off
+,,,,,,,,,,,,,,
+FX1-2BeatDown,FX1BeatDown,Button,941A,,,,,941A,,,,,,FX1 Effect beat down
+FX1-2BeatUp,FX1BeatUp,Button,941B,,,,,941B,,,,,,FX1 Effect beat up
+,,,,,,,,,,,,,,
+FX1-2SelectBack,,Button,9418,,,,,9418,,,,,,
+FX1-2Select,,Button,9419,,,,,9419,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-FX1-2On,FX1-2On,Button,9652,,,,,,,,,,Fast;Priority=100,FX2-1 Effect On/Off
-FX1-3On,FX1-3On,Button,9651,,,,,,,,,,Fast;Priority=100,FX3-1 Effect On/Off
+FX1-2On,FX1-2On,Button,941E,,,,,941E,,,,,Fast;Priority=100,FX2-1 Effect On/Off
+FX1-2On,FX1-2On,Indicator,,,,,,941E,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ##Booth Volume set to sample volume for MFX,,,,,,,,,,,,,,
 MFXSampleVolume,,KnobSlider,B609,,,,,,,,,,,booth volume knob
 ,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
 ## Personal Choice: Turn off FX Selec btn & Change FX Select to Master Cue Shift,,,,,,,,,,,,,,
 NoFunction,NoFunction,Button,9608,,,,,9608,,,,,,VOID FX Select
-CFXSelect,CFXOn+Shift,Button,9662,,,,,,,,,,,Select CFX type - Set to Shift + Master Cue
+CFXSelect,,Button,9662,,,,,9662,,,,,,Select CFX type - Set to Shift + MSTR on Effects
 ,,,,,,,,,,,,,,
 ## Personal Choice: Disable reloop and turn that button into active loop button / exit,,,,,,,,,,,,,,
 NoFunction,NoFunction,Button,904D,0,1,2,3,,,,,,,VOID 
